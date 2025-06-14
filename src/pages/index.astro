@@ -1,16 +1,50 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import wordmark from "../assets/ds-wordmark.png";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <img
+    src={wordmark.src}
+    alt="The Diamond Studios logo. A yellow-orange dot inside a 45 degree rotated square of the same color. Surrounded by pixel art words reading Diamond Studios."
+    width="1000"
+  />
+  <div class="text-center font-mono w-4/6">
+
+    <p class="text-slate-300 text-2xl mb-8">
+      the net these days is boring. we're 4 friends trying to fix that with dumb,
+      fun, creative video games.
+    </p>
+
+    <p class="italic text-slate-400 text-2xl mb-8">
+		hex4
+		⯌
+		InfiniteDiamond
+		⯌
+		Apple
+		⯌
+		50%HUMAN
+    </p>
+
+    <p class="text-slate-300 text-2xl mb-8">
+      we're currently working on <span
+        class="text-amber-400 italic font-extrabold">Countless</span
+      >, a chill virtual card game that you can learn in a minute and play for
+      hours. collect powerful combos, climb the Tower, and challenge your
+      friends online or locally.
+    </p>
+
+    <p class="text-slate-400 text-2xl italic">
+      find us:
+      <br class="mb-4" />
+      <a class="underline underline-offset-4 hover:underline-offset-8 transition-all hover:text-amber-400 duration-300 font-normal hover:font-black" href="https://dimaverse.itch.io" >itch.io</a>
+	  ⯌
+	  <a class="underline underline-offset-4 hover:underline-offset-8 transition-all hover:text-amber-400 duration-300 font-normal hover:font-black" href="https://bsky.app/profile/diamondstudios.xyz">bluesky</a>
+    ⯌
+	  <a class="underline underline-offset-4 hover:underline-offset-8 transition-all hover:text-amber-400 duration-300 font-normal hover:font-black" href="https://www.youtube.com/@dimaverse">youtube</a>
+    ⯌
+	  <a class="underline underline-offset-4 hover:underline-offset-8 transition-all hover:text-amber-400 duration-300 font-normal hover:font-black" href="https://buttondown.com/dimaverse">newsletter</a>
+    </p>
+  </div>
+</Layout>
